@@ -1,11 +1,11 @@
 provider "aws" {
-    region = "us-east-1"  
+    region = "ap-south-1"  
 }
 
-resource "aws_instance" "foo" {
-  ami           = "ami-05fa00d4c63e32376" # us-west-2
+resource "aws_instance" "ubuntu" {
+  ami           = "ami-03a933af70fa97ad2 " # us-west-2
   instance_type = "t2.micro"
   tags = {
-      Name = "TF-Instance"
+      Name = "Terraform server 2"
   }
 }
