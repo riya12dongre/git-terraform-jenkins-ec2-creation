@@ -22,13 +22,13 @@ pipeline {
         
         stage ("plan") {
             steps {
-                sh ('terraform plan') 
+                bat ('terraform plan') 
             }
         }
 
         stage (" Action") {
             steps {
-                sh ('terraform apply -auto-approve')
+                bat ('terraform apply -auto-approve')
            }
         }
     }
